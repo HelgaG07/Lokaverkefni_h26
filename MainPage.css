@@ -1,0 +1,121 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-size: 1.2em;
+    line-height: 1.5;   
+    color: white;
+    background-image: linear-gradient(to bottom, rgb(55, 17, 116), rgb(15, 3, 44));    
+}
+.bg-color {
+    color: rgb(255, 255, 255);
+    padding: 1em;
+}
+.nav {
+    display: grid;
+    text-align: center;
+    list-style-type: none;
+    column-gap: 100px;
+    padding: 10px;
+    font-family: "Bruno Ace SC", sans-serif;
+    margin: 10;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(15, 3, 44);
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+img {
+     max-width: 100%;
+     height: auto;
+     display: block;
+     margin: auto;
+}
+.p {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: 
+    "width" 100;
+    margin: 25px;
+}
+.h1{
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 25px;
+}
+.h2{
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 25px;
+}
+a {
+    color: rgb(252, 252, 252);
+}
+a:visited {
+    columns: rgb(255, 255, 255);
+}
+a:hover, a:active {
+    columns: #000;
+    text-decoration: none;
+}
+footer {
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif;
+    padding: 1em;
+}footer ul{
+    list-style: none;
+}
+a, footer a {
+    color: rgb(255, 255, 255);
+}
+footer a {
+    line-height: 1.5;
+}
+footer a:visited {
+    color: rgb(255, 255, 255);
+}
+footer a:active, .footer a:hover {
+    text-decoration: none;
+}
+
+.copy {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+@media screen and (min-width:48em) {
+    .col-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+        row-gap: 1em;
+    }
+}
+@media screen and (min-width:60em) {
+    .col-3 {
+        gap: 1.5em;
+        row-gap: 1.5em;
+    }
+
+}
+@media screen and (min-width:80em) {
+    body {
+        font-size: 1.4rem;
+    }
+    .container {
+        max-width: 80em;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:100em) {
+    .container {
+        max-width: auto;
+    }
+}
